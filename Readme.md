@@ -10,6 +10,6 @@ to `kubernetes-deployments.com`
 
 `helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx`
 
-`helm install ingress-nginx ingress-nginx/ingress-nginx`
+`helm install ingress-nginx ingress-nginx/ingress-nginx -n app`
 
-`kubectl apply -f *.yml -n app`
+`helm install k8s-deployments . -n app`
