@@ -1,0 +1,14 @@
+namespace: app
+
+deployment:
+    name: test-01
+    containerPort: 8080
+    image: abereziuk/task-01:latest
+
+service:
+    port: 80
+    targetPort: 8080
+
+ingress:
+    host: a.int.itoutposts.com
+    port: 80
