@@ -1,5 +1,3 @@
-namespace: app
-
 deployment:
     name: test-01
     containerPort: 8080
@@ -11,4 +9,3 @@ service:
 
 ingress:
     host: a.int.itoutposts.com
-    port: 80
