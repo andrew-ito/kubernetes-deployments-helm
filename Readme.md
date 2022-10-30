@@ -10,4 +10,8 @@ You have to have `kubectl` and `helm` installed to your machine.
 
 `helm install ingress-nginx ingress-nginx/ingress-nginx -n app`
 
+`helm install cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.10.0 --set installCRDs=true`
+
+`kubectl apply -f cert.yml`
+
 `helm install k8s-deployments . -n app`
